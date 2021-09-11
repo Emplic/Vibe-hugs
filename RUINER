@@ -1,0 +1,65 @@
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = lib.CreateLib("Chill ruiner", "Sentinel")
+local Tab = Window:NewTab("main")
+local Section = Tab:NewSection("rip VIBE HUGS")
+local Tabclient = Window:NewTab("client")
+local Client = Tabclient:NewSection("chill")
+local plr = ""
+
+-- main
+
+
+
+Section:NewButton("kill all", "never gonna give you up", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/kill-all/main/'xyn%200001"))()
+end)
+
+Section:NewButton("FE telekinisis (only on unanchored parts)", "never gonna let u down", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/Telekinisis/main/Emplic"))()
+end)
+
+Section:NewButton("Fates admin", "never gonna tell a lie", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+Section:NewButton("force reset", "and desert you", function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+Section:NewButton("fe emotes/animations/music script", ":)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/FESCRIPT/main/Animations"))()
+end)
+
+Section:NewButton("btools (no one can see it becoming fe SOON)", "lmao", function()
+local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool1.BinType = "Clone"
+tool2.BinType = "GameTool"
+tool3.BinType = "Hammer"
+tool4.BinType = "Script"
+tool5.BinType = "Grab"
+end)
+
+-- client
+
+Client:NewButton("spam CHILL ruiner on top", "made by Emplic/xyn", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/Spammer/main/Spam"))()
+end)
+
+Client:NewButton("inf money", "hmm :)", function()
+if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+   msg = Instance.new("Message",workspace)
+   msg.Text = "Script has been patched 1 day ago, Under maintence."
+   wait(5)
+   msg:Destroy()
+   else
+     
+end
+end)
+
+Client:NewButton("tp to sword area", "simple script lmao", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10,20,60)
+end)
