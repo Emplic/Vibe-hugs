@@ -117,17 +117,12 @@ end)
 Section:NewButton("become light", "friend: are u light me:", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Human Flashlight.txt"))()
 end)
-Section:NewButton("sword reach (equip sword then click)", "script by baitt on yt", function()
-    for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
-                if v:isA("Tool") then
-                    local a = Instance.new("SelectionBox",v.Handle)
-                    a.Adornee = v.Handle
-                    v.Handle.Size = Vector3.new(0.5,0.5,60)
-                    v.GripPos = Vector3.new(0,0,0)
-                    lplayer.Character.Humanoid:UnequipTools()
-                end
-end
-end)
+
+Section:NewButton("sword reach", "friend: hack :me umm im not hack ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/Sword-reach/main/sword"))()
+    end)
+    
+
 -- client
 
 Client:NewButton("spam CHILL ruiner on top", "made by Emplic/xyn", function()
