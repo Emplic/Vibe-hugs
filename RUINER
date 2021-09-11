@@ -3,6 +3,8 @@ local Window = lib.CreateLib("Chill ruiner", "Sentinel")
 local Tab = Window:NewTab("main")
 local Section = Tab:NewSection("rip VIBE HUGS")
 local Tabclient = Window:NewTab("client")
+local Tabcredits = Window:NewTab("credits")
+local credits = Tabcredits:NewSection("fully made by 'xyn 0001")
 local Client = Tabclient:NewSection("chill")
 local plr = ""
 
@@ -22,8 +24,11 @@ Section:NewButton("Fates admin", "never gonna tell a lie", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 end)
 
-Section:NewButton("force reset", "and desert you", function()
-	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+Section:NewButton("refresh", "and desert you", function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(6)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-60,19,77)
 end)
 
 Section:NewButton("fe emotes/animations/music script", ":)", function()
@@ -43,6 +48,50 @@ tool4.BinType = "Script"
 tool5.BinType = "Grab"
 end)
 
+Section:NewButton("break chat", "my cat died", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/spammer/main/byemplic"))()
+end)
+
+Section:NewButton("headless", "rick rolled", function()
+    game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v:Destroy()
+end
+end
+end)
+
+Section:NewButton("copy moaning id to clipboard", "ok", function()
+    setclipboard("7202349017")
+end)
+
+Section:NewButton("chat bypass (can get u banned use on alt", "die in a fire", function()
+    
+loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+
+Section:NewButton("UTG", "xd", function()
+    
+loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+end)
+
+Section:NewButton("TP tool", "cool", function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Section:NewButton("clone urself", "jojo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/clone/main/clone"))()
+    end)
 -- client
 
 Client:NewButton("spam CHILL ruiner on top", "made by Emplic/xyn", function()
@@ -63,3 +112,4 @@ end)
 Client:NewButton("tp to sword area", "simple script lmao", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10,20,60)
 end)
+
