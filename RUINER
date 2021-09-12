@@ -122,7 +122,43 @@ Section:NewButton("sword reach", "friend: hack :me umm im not hack ", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/Sword-reach/main/sword"))()
     end)
     
+Section:NewButton("unamed esp", "for other exploiters", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/Esp/main/Unamed"))()
+end)
+Section:NewButton("tp to main", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-77,4,52)-- main
+end)
 
+Section:NewButton("tp to shop", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108,4,53)-- shop
+    end)
+Section:NewButton("tp to secret", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-133,4,53)-- secret
+end)
+
+Section:NewButton("tp to spawn", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-113,4,98)-- spawn 
+    end)
+
+Section:NewButton("tp to bed", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-43,4,17)-- bed
+end)
+
+Section:NewButton("tp to pc", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30,4,86)-- pc
+end)
+
+Section:NewButton("tp to outside", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55,19,53)-- outside
+end)
+
+Section:NewButton("tp to pool", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107,19,123)-- pool
+end)
+
+Section:NewButton("tp to secret(u need to be in group to get in)", "tp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-127,4,121)-- secret
+    end)
 -- client
 
 Client:NewButton("spam CHILL ruiner on top", "made by Emplic/xyn", function()
@@ -143,4 +179,3 @@ end)
 Client:NewButton("tp to sword area", "simple script lmao", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10,20,60)
 end)
-
