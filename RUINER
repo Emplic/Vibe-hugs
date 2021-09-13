@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/fates-/main/noti"))()
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = lib.CreateLib("Chill ruiner", "Sentinel")
 local Tab = Window:NewTab("main")
@@ -26,7 +27,7 @@ end)
 
 Section:NewButton("refresh", "and desert you", function()
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
-wait(6)
+wait(5.5)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-60,19,77)
 end)
@@ -65,7 +66,7 @@ Section:NewButton("copy moaning id to clipboard", "ok", function()
     setclipboard("7202349017")
 end)
 
-Section:NewButton("chat bypass (can get u banned use on alt", "die in a fire", function()
+Section:NewButton("chat bypass (can get u banned use on alt)", "die in a fire", function()
     
 loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
@@ -162,7 +163,16 @@ end)
 
 Section:NewButton("walkspeed GUI", "simple script by 'xyn 0001", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/walkspeed/main/script"))()
-    end)
+end)
+
+Section:NewButton("tp to sword area", "simple script lmao", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10,20,60)
+end)
+
+Section:NewButton("inf yield", "admin script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
 -- client
 
 Client:NewButton("spam CHILL ruiner on top", "made by Emplic/xyn", function()
@@ -180,6 +190,7 @@ if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R
 end
 end)
 
-Client:NewButton("tp to sword area", "simple script lmao", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10,20,60)
+Client:NewButton("Anti fling", "by byemplic", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/Antifling/main/Emplc"))()
 end)
+
